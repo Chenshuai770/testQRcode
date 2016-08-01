@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <cn.bingoogolapple.qrcode.zxing.ZXingView
+
+            android:id="@+id/zxingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:qrcv_animTime="1000"
+            app:qrcv_barCodeTipText="将条码放入框内，即可自动扫描"
+
+            app:qrcv_barcodeRectHeight="224dp"
+            app:qrcv_borderColor="@android:color/white"
+            app:qrcv_borderSize="1dp"
+            app:qrcv_cornerColor="@color/red"
+            app:qrcv_cornerLength="20dp"
+            app:qrcv_cornerSize="3dp"
+            app:qrcv_isBarcode="false"
+            app:qrcv_isScanLineReverse="true"
+            app:qrcv_isShowDefaultGridScanLineDrawable="false"
+            app:qrcv_isShowDefaultScanLineDrawable="false"
+            app:qrcv_isShowTipBackground="true"
+            app:qrcv_isShowTipTextAsSingleLine="false"
+            app:qrcv_isTipTextBelowRect="true"
+            app:qrcv_maskColor="@color/transparent_background"
+
+            app:qrcv_qrCodeTipText="将二维码放入框内，即可自动扫描"
+            app:qrcv_rectWidth="224dp"
+            app:qrcv_scanLineColor="@color/red"
+            app:qrcv_scanLineMargin="3dp"
+            app:qrcv_scanLineSize="1dp"
+            app:qrcv_tipTextColor="#fff"
+            app:qrcv_tipTextSize="12sp"
+            app:qrcv_toolbarHeight="56dp"
+            app:qrcv_topOffset="50dp"
+            app:qrcv_tipTextMargin="11dp"
+            />
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+
+            >
+
+            >
+            <ImageView
+                android:id="@+id/iv_message_return"
+                android:layout_width="12dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="11dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_back_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="扫一扫"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:text="相册"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
